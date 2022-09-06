@@ -20,5 +20,16 @@
     "color": "",
     "version": "1",
     "readme": "Uses [Cheerio](https://cheerio.js.org/index.html)\nPlease refer to the [documentation](https://cheerio.js.org/classes/Cheerio.html) for available functions.\n## Input\n```js\n<any>\n```\n\n## Output\n```js\n{\n\tresult: <the data returned from the code>,\n\tinput: <incomming data>\n}\n```\n\n## Example code\n```js\n// instance : component instance\n// $: cheerio instance\n// html: html string\n\nvar txt = [];\n$('ul > li').each(function (i, elem) {\n\ttxt.push($(this).text());\n});\nreturn txt;\n```"
+  },
+  {
+    "id": "tql",
+    "group": "HTML",
+    "name": "Tql Querry",
+    "url": "https://shivam-apna.github.io/typerefineryComponents/tqlQuerry.html",
+    "author": "Team-Typerefinery",
+    "icon": "fa fa-code",
+    "color": "",
+    "version": "1",
+    "readme": "Uses [Cheerio](https://cheerio.js.org/index.html)\nPlease refer to the [documentation](https://cheerio.js.org/classes/Cheerio.html) for available functions.\n## Input\n```js\n<any>\n```\n\n## Output\n```js\n{\n\tresult: <the data returned from the code>,\n\tinput: <incomming data>\n}\n```\n\n## Example code\n```js\n// instance : component instance\n// $: cheerio instance\n// html: html string\n\nvar txt = [];\n$('ul > li').each(function (i, elem) {\n\ttxt.push($(this).text());\n});\nreturn txt;\n```"
   }
 ]
