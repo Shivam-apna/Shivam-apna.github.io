@@ -1,0 +1,24 @@
+[
+  {
+    "id": "restapirouter",
+    "group": "REST API",
+    "name": "API Router",
+    "url": "https://cdn.totaljs.com/flowstream/components/restapirouter.html",
+    "author": "Total.js",
+    "icon": "fa fa-crosshairs",
+    "color": "",
+    "version": "2",
+    "readme": "This component implements the [Total.js API Router](https://docs.totaljs.com/total4/cc674001rr51c/#total-js-routing) that allows you to provide only one endpoint (route) by adding multiple endpoints divided by keys. The component expects REST Route message or data in the form:\n\n```js\n{\n\t\"schema\": \"schema_name/{param_1}/{param_2}?query=arguments\",\n\t\"data\": {} // optional, request payload\n}\n```\n\n< __Good to know:__<br>Output data will be the same `data`, but extendend by adding new properties declared below.\n\n__Extended output data:__\n\n- `id {String}` first value from dynamic value\n- `params {Object}` dynamic values\n- `query {Object}` query arguments\n- `user {Object}` optional, inherited from the controller\n- `session {Object}` optional, inherited from the controller\n- `ip {String}` optional, inherited from the controller\n\nIf the controller is stored in the `message.refs.controller` property, then its properties like `controller.id`, `controller.params` and `controller.query` will be extendend by values from parsed schema."
+  },
+  {
+    "id": "cheerio",
+    "group": "HTML",
+    "name": "Cheerio",
+    "url": "https://cdn.totaljs.com/flowstream/components/cheerio.html",
+    "author": "Total.js",
+    "icon": "fa fa-code",
+    "color": "",
+    "version": "1",
+    "readme": "Uses [Cheerio](https://cheerio.js.org/index.html)\nPlease refer to the [documentation](https://cheerio.js.org/classes/Cheerio.html) for available functions.\n## Input\n```js\n<any>\n```\n\n## Output\n```js\n{\n\tresult: <the data returned from the code>,\n\tinput: <incomming data>\n}\n```\n\n## Example code\n```js\n// instance : component instance\n// $: cheerio instance\n// html: html string\n\nvar txt = [];\n$('ul > li').each(function (i, elem) {\n\ttxt.push($(this).text());\n});\nreturn txt;\n```"
+  }
+]
